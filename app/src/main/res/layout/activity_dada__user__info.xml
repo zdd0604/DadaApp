@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/toolbarleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/White"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="50dp"
+            android:gravity="center_vertical"
+            android:text="头像"
+            android:textSize="20dp" />
+
+        <com.dadaxueche.student.dadaapp.View.CircleImageView
+            android:id="@+id/user_info_hand"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/textView24"
+            android:src="@mipmap/wodech" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text=">" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listview_my_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White" />
+
+    <Button
+        android:id="@+id/user_out_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#f9a05f"
+        android:text="退出登录"
+        android:textColor="@color/White"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_backview">@color/White</color>
+    <color name="color_line_backview">#8CCA69</color>
+    <color name="color_line_mainback">#FFC9C9C9</color>
+    <color name="color_button_back">@color/White</color>
+    <color name="color_button_select">#FFA25F</color>
+    <color name="color_button_no_select">@color/Grey</color>
+
+    <color name="color_exam_main_shunxu">#57A8FD</color>
+    <color name="color_exam_main_suiji">#1BCE8D</color>
+    <color name="color_exam_main_beiti">#8CCA69</color>
+    <color name="color_exam_main_chengji">#FFA25F</color>
+    <color name="color_exam_main_paihangbang">#B382F8</color>
+    <color name="color_exam_main_cuoti">@color/Grey</color>
+    <color name="color_exam_main_shoucang">@color/Grey</color>
+    <color name="color_exam_main_lianxi">@color/Grey</color>
+    <color name="color_exam_main_paichu">@color/Grey</color>
+    <color name="color_exam_main_jianjie">@color/Grey</color>
+    <color name="color_exam_main_moni">@color/color_exam_main_beiti</color>
+    <color name="colorProgressBar">@color/Orange</color>
+    <color name="colorProgressBar_No">@color/White</color>
+    <color name="color_radioButton_line">#e4e4e4</color>
+    <color name="color_radioButtonBack">#fbf7ee</color>
+
+    <color name="MyGrey">#f0efef</color>
+    <color name="Black">#000000</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Red">#e51c23</color>
+    <color name="Pink">#e91e63</color>
+    <color name="Purple">#9c27b0</color>
+    <color name="DeepPurple">#673ab7</color>
+    <color name="Indigo">#3f51b5</color>
+    <color name="Blue">#5677fc</color>
+    <color name="LightBlue">#03a9f4</color>
+    <color name="Cyan">#00bcd4</color>
+    <color name="Teal">#009688</color>
+    <color name="Green">#259b24</color>
+    <color name="LightGreen">#8bc34a</color>
+    <color name="Lime">#cddc39</color>
+    <color name="Yellow">#ffeb3b</color>
+    <color name="Amber">#ffc107</color>
+    <color name="Orange">#ff9800</color>
+    <color name="DeepOrange">#ff5722</color>
+    <color name="Brown">#795548</color>
+    <color name="Grey">#9e9e9e</color>
+    <color name="BlueGrey">#607d8b</color>
+
+</resources>

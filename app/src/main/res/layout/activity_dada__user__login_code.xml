@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0efef"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/user_login_tp_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@mipmap/tuxingyanzhengma"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="图像验证码"
+            android:inputType="number"
+            android:maxLength="4"
+            android:paddingLeft="36dp"
+            android:singleLine="true"
+            android:textColor="@color/Black" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="42dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="正在获取" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/user_login_tp_btn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/tpyzm" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/user_login_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@mipmap/shurushouji"
+            android:drawablePadding="10dp"
+            android:hint="输入手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="36dp"
+            android:singleLine="true"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:id="@+id/user_login_mb_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/codebg"
+            android:text="获取验证码"
+            android:textColor="@color/White"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/user_login_mobile_code"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="18dp"
+        android:background="@color/White"
+        android:drawableLeft="@mipmap/yaoshi"
+        android:drawablePadding="10dp"
+        android:hint="手机验证码"
+        android:inputType="number"
+        android:maxLength="4"
+        android:paddingLeft="36dp"
+        android:singleLine="true"
+        android:textColor="@color/Black"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/user_login"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="18dp"
+        android:background="#f9a05f"
+        android:text="登录"
+        android:textColor="@color/White" />
+
+</LinearLayout>

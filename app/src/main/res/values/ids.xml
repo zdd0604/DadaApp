@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="tag_first"/>
+    <item type="id" name="tag_second"/>
+    <item type="id" name="image_exam_answer_1"/>
+    <item type="id" name="image_exam_answer_2"/>
+    <item type="id" name="image_exam_answer_3"/>
+    <item type="id" name="image_exam_answer_4"/>
+
+    <item type="id" name="radioButton_exam_answer_1"/>
+    <item type="id" name="radioButton_exam_answer_2"/>
+    <item type="id" name="radioButton_exam_answer_3"/>
+    <item type="id" name="radioButton_exam_answer_4"/>
+
+    <item type="id" name="item_id"/>
+    <!-- 我的成绩，练习统计-->
+    <item name="titleimg" type="id" />
+    <item name="grade_list" type="id" />
+    <item name="see_more_btn" type="id" />
+    <item name="chart" type="id" />
+    <item name="edit_grade_details" type="id" />
+    <item name="details_back" type="id" />
+    <item name="details_content" type="id" />
+    <item name="edit" type="id" />
+    <item name="edit_grade_list" type="id" />
+    <item name="edit_linear" type="id" />
+    <item name="selectBtn" type="id" />
+    <item name="deleteBtn" type="id" />
+    <item name="edit_grade_title" type="id" />
+</resources>

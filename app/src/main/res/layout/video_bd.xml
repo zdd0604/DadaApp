@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本地"
+        android:id="@+id/textView_bd"
+    android:background="@drawable/back_download_km_video_bd"
+    android:textColor="@color/White"
+    android:textSize="10dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:visibility="gone" />

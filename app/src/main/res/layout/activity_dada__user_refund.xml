@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbarleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/include"
+            android:layout_centerHorizontal="true"
+            android:gravity="fill_vertical|center_horizontal"
+            android:text="您正在申请退款、请核实以下信息" />
+
+        <ListView
+            android:id="@+id/my_jiaxiao_tuikuai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/but_lianxi_jx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#f9a05f"
+                android:gravity="center"
+                android:text="联系驾校"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/but_lianxi_jl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#f9a05f"
+                android:text="联系教练"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/but_lianxi_dada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#f9a05f"
+                android:text="联系嗒嗒"
+                android:textColor="@color/White" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/user_yijian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/White"
+            android:gravity="top"
+            android:hint="退款理由"
+            android:minLines="5"
+            android:textColor="@color/Black" />
+
+        <Button
+            android:id="@+id/but_queren"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#f9a05f"
+            android:text="确认退款"
+            android:textColor="@color/White" />
+    </LinearLayout>
+
+</LinearLayout>

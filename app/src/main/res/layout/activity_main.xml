@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout_Main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/home_title"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:background="@color/MyGrey">
+
+                <ImageView
+                    android:id="@+id/home_page_title_geren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50px"
+                    android:src="@mipmap/wode" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/home_page_title_geren"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/logo" />
+
+
+                <ImageView
+                    android:id="@+id/home_page_title_bao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@+id/imageView"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50px"
+                    android:src="@mipmap/bao" />
+            </RelativeLayout>
+
+            <fragment
+                android:id="@+id/fragment"
+                android:name="com.dadaxueche.student.dadaapp.Fragment.FragmentHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/fragment2"
+                android:name="com.dadaxueche.student.dadaapp.Fragment.FragmentBM"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/fragment3"
+                android:name="com.dadaxueche.student.dadaapp.Fragment.FragmentExam"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/fragment4"
+                android:name="com.dadaxueche.student.dadaapp.Fragment.FragmentYuYue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <fragment
+                android:id="@+id/fragment5"
+                android:name="com.dadaxueche.student.dadaapp.Fragment.FragmentZhiNan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:id="@+id/fragment_rp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton_sy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableTop="@drawable/button_hand_bg"
+                    android:gravity="center"
+                    android:text="首页"
+                    android:textColor="@drawable/button_context_color" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_bm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:button="@null"
+                    android:drawableTop="@drawable/button_baoming_bg"
+                    android:gravity="center"
+                    android:text="报名"
+                    android:textColor="@drawable/button_context_color" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_exam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:button="@null"
+                    android:drawableTop="@drawable/button_exam_bg"
+                    android:gravity="center"
+                    android:text="考试"
+                    android:textColor="@drawable/button_context_color" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_yy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:button="@null"
+                    android:drawableTop="@drawable/button_yuyue_bg"
+                    android:gravity="center"
+                    android:text="预约"
+                    android:textColor="@drawable/button_context_color" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_zn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:button="@null"
+                    android:drawableTop="@drawable/button_direction_bg"
+                    android:gravity="center"
+                    android:text="指南"
+                    android:textColor="@drawable/button_context_color" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/navigation_drawer_Main"
+            android:name="com.dadaxueche.student.dadaapp.Fragment.MainNavigationDrawerFragment"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            tools:layout="@layout/fragment_navigation_drawer_main" />
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

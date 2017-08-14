@@ -1,0 +1,81 @@
+<resources>
+
+    <style name="tab_rb_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/tab_selector_tv_color</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">@mipmap/ic_launcher</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/Blue</item>-->
+        <!--<item name="colorPrimaryDark">@color/Blue</item>-->
+        <item name="android:textColorPrimary">@color/White</item>
+        <item name="android:textColor">@color/Grey</item>
+    </style>
+
+    <style name="MyExamTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">@color/White</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonStyle</item>
+        <item name="android:windowEnterAnimation">@anim/in</item>
+        <item name="android:windowExitAnimation">@anim/out</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="AppTheme">
+        <item name="android:drawableLeft">@drawable/radiobutton</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:drawablePadding">@dimen/image_text</item>
+    </style>
+
+    <style name="MyMainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="colorPrimary">@color/Blue</item>-->
+        <!--<item name="colorPrimaryDark">@color/Blue</item>-->
+        <item name="android:textColorPrimary">@color/White</item>
+        <item name="android:textColor">@color/Black</item>
+        <!--<item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>-->
+    </style>
+
+    <style name="TextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#f9a05f</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColorHint">#ffff0000</item>
+        <item name="android:textColorLink">#ff0000ff</item>
+        <item name="android:textColorHighlight">#ff00ff00</item>
+    </style>
+
+    <style name="OriginalTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:textColorHint">#ffff0000</item>
+        <item name="android:textColorLink">#ff0000ff</item>
+        <item name="android:textColorHighlight">#ff00ff00</item>
+    </style>
+
+    <style name="FullTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_drawable</item>
+        <item name="android:maxHeight">24dip</item>
+        <item name="android:minWidth">23dip</item>
+        <item name="android:minHeight">25dip</item>
+        <item name="android:maxWidth">23dip</item>
+    </style>
+
+    <style name="MyRatingBar_xx" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/adapter_xx_bg</item>
+        <item name="android:maxHeight">24dip</item>
+        <item name="android:minWidth">23dip</item>
+        <item name="android:minHeight">25dip</item>
+        <item name="android:maxWidth">23dip</item>
+    </style>
+
+</resources>
